@@ -1,0 +1,48 @@
+#Ejercicio Practico #1
+# 1 numeros
+n1=5
+n2=5
+rta=n1+n2
+print("1. Ejercicio Numeros Enteros")
+print("La respuesta de la suma de",n1,"+",n2,"es",rta)
+print("\n")
+
+# 2 float
+nm1=5.0
+nm2=4.5
+nm3=3.0
+prom=nm1+nm2+nm3/3
+print("2. Ejercicio Float")
+print("El promedio es",prom)
+print("\n")
+
+# 3 cadenas
+nom="Angela"
+ap="Zea"
+print("3. Ejercicio Cadena")
+print("Mi nombre es",nom, ap)
+print("\n")
+
+# 4 listas
+l1=["Enero","Angela",27,1.72] # lista con elementos de distintos tipos de datos
+print("4. Ejercicio Listas")
+print("Mi nombre es",l1[1], "cumplo el",l1[2], "de",l1[0],"y mido",l1[3])
+print("\n")
+
+# 5 tuplas
+t1=(31,"Mayo",2021)
+print("5. Ejercicio Tuplas")
+print("Tu Fecha de nacimiento")
+print("Dia: ",t1[0])
+print("Mes: ",t1[1])
+print("Año: ",t1[2])
+print("\n")
+
+# 6 diccionarios
+productos={"manzanas":39,"peras":39,"lechuga":17}
+keys= productos.keys()
+values=productos.values()
+print("5. Ejercicio Diccionarios")
+print("Menú", productos)
+print(keys)
+print(values)
