@@ -1,0 +1,59 @@
+#Ejercicio Practico #2
+print("Operadores \n"
+      +"Operadores Artiméticos \n"
+      + "Operadores de Asignación \n"
+      + "Operadores de Comparación \n"
+      + "Operadores lógicos \n"
+      + "Operadores de Identidad \n"
+      + "OBooleans \n")
+
+
+#Variables
+nom = "Angela"
+apell = "Zea"
+x = "Excelente"
+y = 20
+z = 50
+b = 1.20
+c = 5.0
+
+
+# 1
+print("Ejercicio #1")
+r1 = y + z
+r2 = b ** y
+r3 = c // z
+
+print(r1)
+print(r2)
+print(r3)
+print("\n")
+    
+
+# 2 
+print("Ejercicio #2")
+print(b > c and y <= z)
+print(b > c or y <= z)
+print(nom is not apell)
+print("\n")
+
+
+# 3
+print("Ejercicio #3")
+print("¿Si sumo",y,"+", z," el resultado siempre es mayor a 100?", y+z>100, ".Porque la respuesta es",r1)
+print("\n")
+
+# 4
+print("Ejercicio #4")
+print(x and apell == type(str))
+print("\n")
+
+
+# 5
+print("Ejercicio #5")
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+print(bool(x))
+print(bool(y))
+print("\n")
