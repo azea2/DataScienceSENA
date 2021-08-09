@@ -8,30 +8,29 @@ talleres = 25%
 asistencia = 5%
 participacion = 15%
 proyecto = 45%
-
-Notas recolectadas hasta el momento
-tareas = 4.5
-talleres = 4.0
-asistencia = 5.0
-participacion = 4.0
-proyecto = 0.0
 '''
-
+#NOTAS RECOLECTADAS HASTA EL MOMENTO
+t = 4.5
+tll = 4.0
+a = 5.0
+p = 4.0
+pry = 0.0
 
 #NOTAS * PORCENTAJE (PORCENTAJE CONVERTIDO A DECIMAL N/100)
-tareas = 4.5 * 0.1
-talleres = 4.0 * 0.25
-asistencia = 5.0 * 0.05
-participacion = 4.0 * 0.15
-proyecto = 0.0 * 0.45
+tareas = t * 0.1
+talleres = tll * 0.25
+asistencia = a * 0.05
+participacion = p * 0.15
+proyecto = pry * 0.45
 
 
-#IMPRESIÓN DEL PORCENTAJE EN CADA ITEM DE CALIFICACIÓN
-print("Tareas: ", tareas)
-print("Talleres: ", talleres)
-print("Asistencia: ", asistencia)
-print("Participacion: ", participacion)
-print("proyecto: ", proyecto)
+#IMPRESIÓN DE LA NOTA Y EL PORCENTAJE EN CADA ITEM DE CALIFICACIÓN
+print("NOTA Y PORCENTAJE EN CADA ITEM DE CALIFICACIÓN")
+print("Nota Tareas: ",t, " - Porcentaje: ",tareas)
+print("Nota Talleres: ",tll, " - Porcentaje: ",talleres)
+print("Nota Asistencia: ",a, " - Porcentaje: ",asistencia)
+print("Nota Participacion: ",p, " - Porcentaje: ",participacion)
+print("Nota proyecto: ",pry, " - Porcentaje: ",proyecto)
 print("\n")
 
 
@@ -48,15 +47,20 @@ porcentajeNotaProyecto = 3.7 - defSinNotaProyecto
 print("Si hasta el momento la definitiva sin la nota del proyecto es ",defSinNotaProyecto,"entonces necesitaría una nota en el item proyecto de ",porcentajeNotaProyecto, "para obtener una nota final de 3.7 en el Bootcamp")
 print("\n")
 
-#APLICACIÓN DEL CALCULO MATEMÁTICO A LA NOTA FALTANTE
-notaProyecto = round(porcentajeNotaProyecto * 0.45)
 
+#NOTA QUE DEBERÍA SACAR EN EL ITEM PROYECTO
+npry = round(porcentajeNotaProyecto / 0.45)
 
-print("Aplicación del análisis")
-print("Tareas: ", tareas,"\n"
-      "Talleres: ", talleres,"\n"
-      "Asistencia: ", asistencia,"\n"
-      "Participacion: ", participacion,"\n"
-      "proyecto: ", notaProyecto,"\n")
+#-------------------------------------------------------------------------#
+print("APLICACIÓN DEL ANÁLISIS")
+
+#IMPRESIÓN DE LA NOTA Y EL PORCENTAJE EN CADA ITEM DE CALIFICACIÓN
+print("NOTA Y PORCENTAJE EN CADA ITEM DE CALIFICACIÓN")
+print("Nota Tareas: ",t, " - Porcentaje: ",tareas)
+print("Nota Talleres: ",tll, " - Porcentaje: ",talleres)
+print("Nota Asistencia: ",a, " - Porcentaje: ",asistencia)
+print("Nota Participacion: ",p, " - Porcentaje: ",participacion)
+print("Nota proyecto: ",npry, " - Porcentaje: ",round(porcentajeNotaProyecto))
+print("\n")
 
 print("La nota definitiva del Bootcamp es: ",tareas + talleres + asistencia + participacion + porcentajeNotaProyecto)
