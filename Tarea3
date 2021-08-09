@@ -45,7 +45,7 @@ print("\n")
 #CALCULO MATEMÁTICO PARA SABER LA CANTIDAD EL PORCENTAJE QUE NECESITO EN LA NOTA PROYECTO
 porcentajeNotaProyecto = 3.7 - defSinNotaProyecto
 
-print("Si hasta el momento la definitiva sin la nota del proyecto es ",defSinNotaProyecto,"entonces necesitaría un promedio en la nota del proyecto de ",porcentajeNotaProyecto, "para obtener una nota final de 3.7 en el Bootcamp")
+print("Si hasta el momento la definitiva sin la nota del proyecto es ",defSinNotaProyecto,"entonces necesitaría una nota en el item proyecto de ",porcentajeNotaProyecto, "para obtener una nota final de 3.7 en el Bootcamp")
 print("\n")
 
 #APLICACIÓN DEL CALCULO MATEMÁTICO A LA NOTA FALTANTE
