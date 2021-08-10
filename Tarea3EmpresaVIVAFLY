@@ -1,0 +1,83 @@
+#PROFE SOLO PUDE REALIZARLO HASTA ESTE PUNTO POR LA DIFICULTAD QUE LE COMENTE, AGRADEZCO SU EMPATIA Y ENSEÑANZAS, DIOS LA BENDIGA SIEMPRE, (HARÉ TODO LO POSIBLE POR TERMINARLO)
+#Ejercicio Practico #3
+#Empresa VIVAFLY
+'''
+PROBLEMA
+Genere un código donde se pueda observar las respectivas premiaciones.
+
+OBJETIVO
+Sortear viajes a los 5 clientes con más antigüedad.
+
+PLANEACIÓN
+1. Definir variables y asignarle un color
+2. Definir las probabilidades
+3. Definir las restricciones
+(El porcentaje de probabilidad, pondeaciones)
+4. Condicionales
+'''
+
+p1 = Viaje todo incluído para dos personas a San Andres(Premio 1)
+p2 = un pasadía a los termales de San Vicente incluyendo almuerzo (Premio 2)
+p3 = Viaje todo incluido para dos personas a Santa Marta (Premio 3)
+p4 = Pasadía al desierto de Tatacoa (Sin incluír alimentación) (Premio 4)
+
+rs = Rosado= Premio 1
+v = Verde=Premio 2
+a = Azul=Premio 3
+g = Gris=Premio 4
+r = Roja=No hay premio
+
+pbrs = 15%
+pbv = 20%
+pba= 5%
+pbg = 20%
+pbr = 40%
+
+#PARA LOS QUE SI OBTENGAN EL PREMIO
+recibirán un bono en efectivo del porcentaje que represente la probabilidad de ganar con cada balota sobre un valor variable. Sin embargo, se debe tener en cuenta que, Si al aplicar el porcentaje arroja un valor inferior a 120.000, no se les dará el bono en efectivo sino dos boletas de cine 4D para la película en estreno del mes incluyendo un solo combo de palomitas.Por otro lado, para la persona que saque balota roja obtendrá un premio de 120.000 pesos.
+
+if pb == pbrs and <= 120.000:
+  bonoEfectivo = pbrs
+  elif pb == pbv and <= 120.000:
+  bonoEfectivo = pbv
+  elif pb == pba and <= 120.000:
+  bonoEfectivo = pba
+  elif pb == pbg and <= 120.000:
+  bonoEfectivo = pbg
+  elif pb == pbr and <= 120.000:
+  bonoEfectivo = pbr
+  premio = 120.000
+  else:
+    print(Adicionalmente has ganado dos boletas de cine 4D para la película en estreno del mes incluyendo un solo combo de palomitas)
+
+#ACUMULADO DE PUNTOS
+'''
+a. Antigüedad >10 años = 50% sino 40% 
+b. Referidos >10 usuarios = 30% sino 20% 
+c. Liderazgo en los programas de cooperación de viajes internos=20% sino 10%
+'''
+a = Antigüedad
+b = Referidos
+c = Liderazgo
+
+if a >10:
+  a = 50%
+  else:
+    a = 40%
+  if b >10:
+    b = 30%
+    else:
+      b 20%
+    if c == liderazgo:
+      c = 20%
+      else:
+        c = 10%
+
+
+if a adn b and c == true:
+  puntaje = 50%
+
+if ponderacion >= 600.000:
+  ponde = 500
+  else:
+    ponde = 250
